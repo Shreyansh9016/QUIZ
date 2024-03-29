@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#61E8C1"
+    android:padding="25dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/totalquestions"
+        android:layout_width="376dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:text="Total Questions"
+        android:textColor="#0A2ADD"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="376dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="150dp"
+        android:text="Aapka prashn ye raha :"
+        android:textColor="#1D537E"
+        android:textSize="25dp"
+        android:layout_above="@+id/choices"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/choices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/ansa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Option A."
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/ansb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Option B."
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/ansc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Option C."
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/ansd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Option D."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/choices"
+        android:text="SUBMIT"
+        android:textColor="#DA0C0C"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
